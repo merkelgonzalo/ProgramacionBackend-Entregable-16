@@ -123,3 +123,12 @@ Date: 31/7/2023 - Hour: 21:06:11 - Method: Login
 Date: 2/8/2023 - Hour: 20:33:31 - Method: GET producs
 Date: 2/8/2023 - Hour: 20:33:34 - Method: Login
 Date: 2/8/2023 - Hour: 20:33:38 - Method: GET producs
+Date: 2/8/2023 - Hour: 21:25:28 - Method: GET producs
+Date: 2/8/2023 - Hour: 21:26:15 - Method: GET producs
+Date: 3/8/2023 - Hour: 11:31:14 - Method: GET producs
+Date: 3/8/2023 - Hour: 11:31:50 - Method: GET a product
+Date: 3/8/2023 - Hour: 11:32:03 - Method: GET a product
+Date: 3/8/2023 - Hour: 11:32:31 - Method: GET a product
+Date: 3/8/2023 - Hour: 11:34:11 - Method: GET a product
+Date: 3/8/2023 - Hour: 11:34:22 - Method: DELETE a product
+Date: 3/8/2023 - Hour: 11:35:41 - Method: GET producs

@@ -16,6 +16,8 @@ import initializePassport from './config/passport.config.js';
 import { config } from './config/config.js';
 import { errorHandler } from "./middlewares/errorHandler.js";
 import { addLogger } from './utils/logger.js';
+import { swaggerSpecs } from "./config/docConfig.js";
+import swaggerUi from "swagger-ui-express";
 
 const MONGO = config.mongo.url;
 const PORT = config.server.port;
@@ -49,6 +51,8 @@ app.use('/api/carts', cartRouter);
 app.use('/api/sessions', sessionRouter);
 app.use('/api/mockingproducts', mockingRouter);
 app.use('/api/loggertest', addLogger, loggerRouter);
+app.use("/api/docs", swaggerUi.serve,swaggerUi.setup(swaggerSpecs));
+
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(errorHandler);
