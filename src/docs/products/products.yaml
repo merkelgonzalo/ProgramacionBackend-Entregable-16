@@ -19,6 +19,12 @@ paths:
       summary: Post a product
       tags:
         - Products
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/updateProduct'
       responses:
         "200":
           description: Product was created correctly.
@@ -106,7 +112,7 @@ paths:
 
 components:
   schemas:
-    Products:
+    Product:
       type: Object
       properties:
         _id:

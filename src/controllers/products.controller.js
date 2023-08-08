@@ -70,7 +70,7 @@ export const getProductController = async (req, res) => {
 export const createProductController = async (req, res) => {
     try {
         let productBody = req.body;
-        if(!productBody.title || !productBody.price || !productBody.code || !productBody.category){
+        if(!productBody.title || !productBody.price || !productBody.category){
             errorService.customError({
                 name: "Product create error",
                 cause: errorService.generateProductErrorInfo(req.body),
